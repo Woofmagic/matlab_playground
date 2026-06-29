@@ -1,5 +1,5 @@
 % Date created: 20260623
-% Last updated: 20260623
+% Last updated: 20260627
 % Notes:
 %   1. 20260623:
 %   https://www.mathworks.com/matlabcentral/answers/477201-section-headers-are-formatting-as-comments-how-to-get-sh-working-again
@@ -21,5 +21,5 @@ TS_Init(DATASERIES_FILENAME, 'hctsa', true)
 
 disp("Loaded the time-series data with hcsta.")
 
-% this is not working right now...
-TS_Compute(true);
+% this does work now!
+TS_Compute(false);
