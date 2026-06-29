@@ -1,5 +1,5 @@
 % Date created: 20260623
-% Last updated: 20260623
+% Last updated: 20260629
 % Notes:
 %   1. 20260623: You should really follow this link: https://time-series-features.gitbook.io/hctsa-manual/installing-and-using-hctsa/calculating/input_files#input-file-format-1-.mat-file
 %   It will teach you everything that you need to know.
@@ -9,7 +9,7 @@
 
 % what do you want to call the datafile name:
 TIMESERIES_DATA_FILENAME = 'test_datafile';
-matlab_file_extension = 'm';
+matlab_file_extension = 'mat';
 
 % just dynamically create the timeseries datafile name:
 % https://stackoverflow.com/a/78351978 -> for how to do f-string-type
@@ -32,6 +32,6 @@ keywords = {'timeseries, another_word'};
 % use MATLAB's save function; see the docs for the strange syntax:
 % https://www.mathworks.com/help/matlab/ref/save.html
 
-save(TIMESERIES_DATA_FILENAME,'timeSeriesData', 'labels', 'keywords');
+save(TIMESERIES_DATA_FILENAME, 'timeSeriesData', 'labels', 'keywords');
 
 disp('Finished creating and saving a test timeseries dataset.')
