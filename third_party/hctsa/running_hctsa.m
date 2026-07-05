@@ -22,4 +22,7 @@ TS_Init(DATASERIES_FILENAME, 'hctsa', true)
 disp("Loaded the time-series data with hcsta.")
 
 % this does work now!
-TS_Compute(false);
+TS_Compute(false, [], [], 'missing');
+
+test_simulation_file = load(DATASERIES_FILENAME);
+tsd = test_simulation_file.timeSeriesData;
