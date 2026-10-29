@@ -1,0 +1,1 @@
+1. Got it all to work! One thing that we should know is that the `.set` file type is actually pretty important. I guess that is what EEGLAB wants. By the way, it is a "data*set*" and that is why the filetype is `.set`. I guess.
